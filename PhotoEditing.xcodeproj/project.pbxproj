@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A0240D829991D2900E97D9E /* Exts.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0240D729991D2900E97D9E /* Exts.m */; };
+		7A0240DC29992AD400E97D9E /* Filters.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0240DB29992AD400E97D9E /* Filters.m */; };
+		7A0240DF29992C3200E97D9E /* AnshIFiltersPackNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0240DE29992C3200E97D9E /* AnshIFiltersPackNew.swift */; };
+		7A0240E129992CF900E97D9E /* MetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0240E029992CF900E97D9E /* MetalView.swift */; };
 		7A0D0B582994E27400FBE244 /* ImageEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0D0B572994E27400FBE244 /* ImageEditorViewController.swift */; };
 		7A0D0B5B2994EA6B00FBE244 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0D0B5A2994EA6B00FBE244 /* Extensions.swift */; };
 		7A0D0B5F2994ED2100FBE244 /* LibMain.c in Sources */ = {isa = PBXBuildFile; fileRef = 7A0D0B5E2994ED2100FBE244 /* LibMain.c */; };
@@ -22,6 +26,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A0240D729991D2900E97D9E /* Exts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Exts.m; sourceTree = "<group>"; };
+		7A0240D929991DC200E97D9E /* Ext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ext.h; sourceTree = "<group>"; };
+		7A0240DB29992AD400E97D9E /* Filters.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Filters.m; sourceTree = "<group>"; };
+		7A0240DD29992AFD00E97D9E /* Filters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Filters.h; sourceTree = "<group>"; };
+		7A0240DE29992C3200E97D9E /* AnshIFiltersPackNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnshIFiltersPackNew.swift; sourceTree = "<group>"; };
+		7A0240E029992CF900E97D9E /* MetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalView.swift; sourceTree = "<group>"; };
 		7A0D0B572994E27400FBE244 /* ImageEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageEditorViewController.swift; sourceTree = "<group>"; };
 		7A0D0B5A2994EA6B00FBE244 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		7A0D0B5D2994ED2100FBE244 /* LibMain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibMain.h; sourceTree = "<group>"; };
@@ -52,6 +62,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A0240DA29992AAA00E97D9E /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				7A0240DB29992AD400E97D9E /* Filters.m */,
+				7A0240DE29992C3200E97D9E /* AnshIFiltersPackNew.swift */,
+			);
+			path = Filters;
+			sourceTree = "<group>";
+		};
 		7A0D0B592994EA5900FBE244 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				7A0D0B5E2994ED2100FBE244 /* LibMain.c */,
+				7A0240D729991D2900E97D9E /* Exts.m */,
+				7A0240E029992CF900E97D9E /* MetalView.swift */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -87,6 +108,7 @@
 		7A8E74C5299152CC00894730 /* PhotoEditing */ = {
 			isa = PBXGroup;
 			children = (
+				7A0240DA29992AAA00E97D9E /* Filters */,
 				7A0D0B5C2994ED0E00FBE244 /* Lib */,
 				7A0D0B592994EA5900FBE244 /* Extensions */,
 				7A8E74DB299167B200894730 /* Headers */,
@@ -119,6 +141,8 @@
 				7A0D0B5D2994ED2100FBE244 /* LibMain.h */,
 				7A8E74E12992B19600894730 /* PhotoEditorViewController.h */,
 				7A8E74E02992B19500894730 /* PhotoEditing-Bridging-Header.h */,
+				7A0240D929991DC200E97D9E /* Ext.h */,
+				7A0240DD29992AFD00E97D9E /* Filters.h */,
 			);
 			path = Headers;
 			sourceTree = "<group>";
@@ -196,10 +220,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A8E74CB299152CC00894730 /* FirstViewController.swift in Sources */,
+				7A0240DF29992C3200E97D9E /* AnshIFiltersPackNew.swift in Sources */,
+				7A0240DC29992AD400E97D9E /* Filters.m in Sources */,
 				7A8E74C7299152CC00894730 /* AppDelegate.swift in Sources */,
+				7A0240E129992CF900E97D9E /* MetalView.swift in Sources */,
 				7A8E74C9299152CC00894730 /* SceneDelegate.swift in Sources */,
 				7A0D0B582994E27400FBE244 /* ImageEditorViewController.swift in Sources */,
 				7A0D0B61299695A200FBE244 /* MainEditorViewController.swift in Sources */,
+				7A0240D829991D2900E97D9E /* Exts.m in Sources */,
 				7A8E74E32992B19600894730 /* PhotoEditorViewController.m in Sources */,
 				7A8E74DD2992A84500894730 /* EditorViewController.swift in Sources */,
 				7A0D0B5F2994ED2100FBE244 /* LibMain.c in Sources */,

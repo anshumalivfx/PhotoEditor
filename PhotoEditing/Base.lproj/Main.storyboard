@@ -57,7 +57,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tabBar contentMode="bottom" fixedFrame="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="L5t-Ru-mPu">
-                                <rect key="frame" x="0.0" y="768" width="394" height="84"/>
+                                <rect key="frame" x="-2" y="767" width="396" height="84"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <tabBarItem title="Saturation" image="drop" catalog="system" id="es2-bb-mEY"/>
@@ -68,12 +68,12 @@
                                 <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tabBar>
                             <navigationBar autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" semanticContentAttribute="spatial" fixedFrame="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="p2V-qW-IuN">
-                                <rect key="frame" x="-1" y="59" width="394" height="96"/>
+                                <rect key="frame" x="-1" y="59" width="395" height="96"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <navigationItem title="Editor" largeTitleDisplayMode="never" id="tXb-9V-6I2">
-                                        <barButtonItem key="rightBarButtonItem" title="Item" image="rectangle.portrait.and.arrow.right" catalog="system" id="huQ-qZ-p6k">
+                                        <barButtonItem key="rightBarButtonItem" title="Item" image="checkmark" catalog="system" id="huQ-qZ-p6k">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <connections>
                                                 <action selector="touchFinished:" destination="rCB-sk-uv7" id="EOH-j4-R8Y"/>
@@ -82,8 +82,8 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qx9-QM-xuu">
-                                <rect key="frame" x="17" y="325" width="361" height="131"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YSj-Ik-gxW">
+                                <rect key="frame" x="76" y="362" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -91,9 +91,11 @@
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="Qx9-QM-xuu" id="KRK-XO-4V4"/>
-                        <outlet property="navigationBar" destination="p2V-qW-IuN" id="jci-aw-tls"/>
+                        <outlet property="imageView" destination="YSj-Ik-gxW" id="Qe5-Nk-TWA"/>
+                        <outlet property="navigationBar" destination="p2V-qW-IuN" id="HWS-G5-vy6"/>
+                        <outlet property="navigationBarItems" destination="tXb-9V-6I2" id="Xdb-oL-Cf7"/>
                         <outlet property="tabBar" destination="L5t-Ru-mPu" id="53L-0y-f6g"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="discardEditing" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="qZo-rH-H3H"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mp8-a3-m3j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -103,10 +105,10 @@
     </scenes>
     <resources>
         <image name="cameraButton" width="138.66667175292969" height="80"/>
+        <image name="checkmark" catalog="system" width="128" height="114"/>
         <image name="crop" catalog="system" width="128" height="116"/>
         <image name="drop" catalog="system" width="96" height="128"/>
         <image name="imageLibary" width="138.66667175292969" height="80"/>
-        <image name="rectangle.portrait.and.arrow.right" catalog="system" width="128" height="109"/>
         <image name="sun.max" catalog="system" width="128" height="125"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

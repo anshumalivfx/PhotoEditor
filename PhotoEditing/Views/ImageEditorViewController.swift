@@ -33,6 +33,8 @@ class ImageEditorViewController: UIViewController {
     
     
     
+    
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -47,6 +49,7 @@ class ImageEditorViewController: UIViewController {
         initPicture()
     }
     
+   
     @objc func clickButton() {
         NSLog("%@", "Hello")
     }
